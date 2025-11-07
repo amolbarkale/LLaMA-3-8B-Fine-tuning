@@ -345,7 +345,7 @@ toxicity_score = toxicity_scores['toxicity']
 
 ---
 
-**Report**: https://wandb.ai/barkaleamol7/Responsible-AI-Alignment-A100-please-final?nw=nwuserbarkaleamol
+**Report**: https://docs.google.com/document/d/1u3ADrxbRu5Vde7ZZxjlX1yVEUUYj7JqT-YTngcdEico/edit?usp=sharing
 
 **Author**: Amol S B
 **Version**: 1.0.0
