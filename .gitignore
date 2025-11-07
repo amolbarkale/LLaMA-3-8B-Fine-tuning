@@ -1,0 +1,80 @@
+# Dependencies and virtual environments
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.venv/
+env/
+ENV/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific - exclude large model files and cache directories
+# These will be shared separately with teacher
+
+# Model weights and adapters (too large for GitHub)
+models/
+outputs/
+
+# Cache and temporary files
+unsloth_compiled_cache/
+wandb/
+
+# Large backup files
+complete_project_backup_20251003_221631.tar.gz
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+*.cache
+
+# Logs (keep only essential result files)
+*.log
+!results/*.csv
+!results/*.png
+
+# Backup files
+*backup*
+*Backup*
+
+# Compressed archives
+*.zip
+*.tar.gz
+
+# Environment variables
+.env
+
+#Lighning Studio
+.lightning_studio/
+.triton/
