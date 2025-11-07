@@ -1,0 +1,33 @@
+# QLoRA Training Configuration
+
+# Model Configuration
+model_name: "unsloth/llama-3-8b-bnb-4bit"
+base_model_name: "meta-llama/Meta-Llama-3-8B"
+
+# Dataset Configuration
+dataset_name: "Anthropic/hh-rlhf"
+num_train_samples: 10000
+num_eval_samples: 100
+
+# Output Configuration
+output_dir: "./models/llama3-qlora-adapter"
+wandb_project: "Responsible-AI-Alignment-A100-please-final"
+
+# Training Hyperparameters (Optimized for A100 40GB)
+num_train_epochs: 2
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+learning_rate: 2.0e-4
+warmup_steps: 10
+max_seq_length: 1024
+max_grad_norm: 1.0
+
+# LoRA Configuration
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.0
+
+# Evaluation Configuration
+evaluation:
+  judge_model: "gpt-4o-mini"
+  num_samples: 100
