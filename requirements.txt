@@ -1,0 +1,29 @@
+# Core ML Libraries
+torch>=2.3.0
+transformers>=4.41.0
+datasets>=2.19.0
+accelerate>=0.30.0
+peft>=0.11.0
+trl>=0.8.6
+bitsandbytes>=0.43.0
+
+# Unsloth for efficient training
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+
+# Evaluation & Safety
+detoxify>=0.5.2
+openai>=1.30.0
+
+# Utilities
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+wandb>=0.15.0
+
+# Jupyter (optional)
+ipykernel>=6.25.0
+
