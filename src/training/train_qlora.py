@@ -193,3 +193,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     main(args.config)
 
+python src/evaluation/compare_results.py --baseline ./results/evaluation_baseline_100samples.csv --qlora ./results/evaluation_qlora_100samples.csv --dpo ./results/evaluation_dpo_100samples.csv
