@@ -1,0 +1,31 @@
+# DPO Training Configuration
+
+# Model Configuration
+model_name: "meta-llama/Meta-Llama-3-8B"
+adapter_path: "./models/llama3-qlora-adapter"
+
+# Dataset Configuration
+dataset_name: "Anthropic/hh-rlhf"
+num_train_samples: 5000
+
+# Output Configuration
+output_dir: "./models/llama3-dpo-adapter"
+wandb_project: "Responsible-AI-Alignment-A100-please-final"
+
+# DPO Training Hyperparameters (Optimized for A100 40GB)
+num_train_epochs: 1
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 5.0e-7
+warmup_steps: 10
+max_seq_length: 1024
+max_grad_norm: 1.0
+
+# DPO Specific
+beta: 0.1
+loss_type: "sigmoid"
+
+# LoRA Configuration (for DPO)
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.0
